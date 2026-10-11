@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <main>
+        <form action="/submit" method="post">
+            Name: <input type="text" placeholder="username" required>
+            <br><br>
+            Password: <input type="password" placeholder="password" required>
+            <br><br>
+            <label for="class"><big>Select Class:</big>
+                <label for="101">
+                    <input type="radio" name="class" value="class 11" id="101">Class 11
+                </label>
+                <label for="102">
+                    <input type="radio" name="class" value="class 12" id="102">Class 12
+                </label>
+            </label>
+            <br><br>
+            <label for="subject"><big>Select Your Subject:</big>
+                <br>
+                <label for="physics">
+                    <input type="checkbox" name="subject" value="physics" id="physics">Physics
+                </label>
+                <br>
+                <label for="chemistry">
+                    <input type="checkbox" name="subject" value="chemistry" id="chemistry">Chemistry
+                </label>
+                <br>
+                <label for="maths">
+                    <input type="checkbox" name="subject" value="maths" id="maths">Maths
+                </label>
+            </label>
+            <br><br>
+            <select name="city">
+                <option value="Delhi">Delhi</option>
+                <option value="Rudrapur">Rudrapur</option>
+                <option value="Haldwani">Haldwani</option>
+            </select>
+            <br><br>
+            <textarea name="feedback" placeholder="Write your feedback here."></textarea>
+            <br><br>
+            <input type="submit" value="Sign up">
+            <br><br>
+            <iframe width="560" height="315" src="https://www.wikipedia.org/">
+            </iframe>
+            <video width="320" height="240" src="https://youtu.be/HcOc7P5BMi4?si=sTH6RTRvPl7gD6UP" controls></video>    
+        </form>
+</body>
+
+</html>
