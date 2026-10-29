@@ -1,13 +1,13 @@
-// function tehelkaFunction() {
-//     console.log("Aaj tehelka function banega.");
-// }
-// tehelkaFunction();
+function tehelkaFunction() {
+    console.log("Aaj tehelka function banega.");
+}
+tehelkaFunction();
 
 
-// Function-- > Two Numbers Addition
-// function addTwoNumbers(n1, n2) {
-//     console.log(`The addition of two numbers ${n1} and ${n2} is ${n1 + n2}.`);
-// }
+Function-- > Two Numbers Addition
+function addTwoNumbers(n1, n2) {
+    console.log(`The addition of two numbers ${n1} and ${n2} is ${n1 + n2}.`);
+}
 
 
 // Arrow Functon for Multiplication
