@@ -4,7 +4,7 @@ function tehelkaFunction() {
 tehelkaFunction();
 
 
-Function-- > Two Numbers Addition
+// Function-- > Two Numbers Addition
 function addTwoNumbers(n1, n2) {
     console.log(`The addition of two numbers ${n1} and ${n2} is ${n1 + n2}.`);
 }
