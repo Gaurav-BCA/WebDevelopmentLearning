@@ -27,3 +27,21 @@ const karanArjun3 = {
 karanArjun.__proto__ = employee;
 karanArjun2.__proto__ = employee;
 karanArjun3.__proto__ = employee;
+
+// Create Class
+class ToyotaCar {
+    start() {
+        console.log("Start");
+    };
+    stop() {
+        console.log("Stop");
+    };
+    setBrand(brand){
+        this.brandName = brand;
+    };
+};
+
+let fortuner = new ToyotaCar;
+fortuner.setBrand("Fortuner");
+let lexus = new ToyotaCar;
+lexus.setBrand("Lexus");
