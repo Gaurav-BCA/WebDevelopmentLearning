@@ -30,18 +30,22 @@ karanArjun3.__proto__ = employee;
 
 // Create Class
 class ToyotaCar {
+    constructor(brand){
+        console.log("Creating a new object");
+        this.brandName = brand;
+    };
     start() {
         console.log("Start");
     };
     stop() {
         console.log("Stop");
     };
-    setBrand(brand){
-        this.brandName = brand;
-    };
+    // setBrand(brand){
+    //     this.brandName = brand;
+    // };
 };
 
 let fortuner = new ToyotaCar;
-fortuner.setBrand("Fortuner");
-let lexus = new ToyotaCar;
-lexus.setBrand("Lexus");
+// fortuner.setBrand("Fortuner");
+let lexus = new ToyotaCar("Lexus");
+// lexus.setBrand("Lexus");
