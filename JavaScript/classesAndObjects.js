@@ -53,11 +53,13 @@ let lexus = new ToyotaCar("Lexus");
 
 // Learn about Inheritence
 class Person {
-    constructor(){
+    constructor(gender) {
+        console.log("parent");
+        this.gender = gender;
         this.species = "Homo Sapiens";
     };
-    eat() {
-        console.log("Eat");
+    eat(item) {
+        console.log("Eat", item);
     };
     sleep() {
         console.log("Sleep");
@@ -68,12 +70,18 @@ class Person {
 };
 
 class Engineer extends Person {
-    work() {
+    constructor(gender){
+        console.log("child consturctor");
+        super(gender);     // super() is used to invoked parent class constructor
+    };
+    work(item) {
+        super.eat(item);
         console.log("Solve problems, Build error free!"); // If Child & Parent have same method, child's method will be used.[Method Overriding]
     };
 };
 
-let gauravObj = new Engineer;
+let gauravObj = new Engineer("Male");
+gauravObj.work("Cake");
 
 class Doctor extends Person {
     work() {
