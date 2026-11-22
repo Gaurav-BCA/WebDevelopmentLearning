@@ -27,6 +27,7 @@
 
 let promise = new Promise((resolve, reject) => {
     console.log("It's a promise.");
+    // resolve("Done");
     reject("Not Done!");
 });
 
